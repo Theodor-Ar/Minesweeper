@@ -2,8 +2,8 @@
 
 import tkinter as tk
 
-from src.core.logic import MinesweeperLogic
-from src.ui.gui import MinesweeperGUI
+from src.logic import MinesweeperLogic
+from src.gui import MinesweeperGUI
 
 
 ROWS = 10

@@ -1,6 +1,6 @@
 """Логика игры."""
 
-from typing import List, Dict, Any
+from typing import Any
 
 
 class MinesweeperLogic:
@@ -14,7 +14,7 @@ class MinesweeperLogic:
         self.is_first_move = True
         self.is_game_over = False
 
-        self.board: List[List[Dict[str, Any]]] = [
+        self.board: list[list[dict[str, Any]]] = [
             [
                 {
                     "is_mine": False,

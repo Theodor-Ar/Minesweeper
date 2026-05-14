@@ -3,7 +3,7 @@
 import tkinter as tk
 from typing import List
 
-from src.core.logic import MinesweeperLogic
+from src.logic import MinesweeperLogic
 
 
 class MinesweeperGUI:
