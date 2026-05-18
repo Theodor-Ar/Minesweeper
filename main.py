@@ -8,7 +8,7 @@ from src.gui import MinesweeperGUI
 
 ROWS = 10
 COLS = 10
-MINES = 10
+MINES = 30
 
 
 def main() -> None:
