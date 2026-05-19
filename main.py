@@ -2,13 +2,9 @@
 
 import tkinter as tk
 
-from src.logic import MinesweeperLogic
 from src.gui import MinesweeperGUI
-
-
-ROWS = 10
-COLS = 10
-MINES = 30
+from src.logic import MinesweeperLogic
+from src.config import STANDARD_COLS, STANDARD_MINES, STANDARD_ROWS
 
 
 def main() -> None:
@@ -16,7 +12,11 @@ def main() -> None:
     root.title("Сапёр")
     root.resizable(False, False)
 
-    game_logic = MinesweeperLogic(rows=ROWS, cols=COLS, mines=MINES)
+    game_logic = MinesweeperLogic(
+        rows=STANDARD_ROWS,
+        cols=STANDARD_COLS,
+        mines=STANDARD_MINES,
+    )
     MinesweeperGUI(root=root, game_logic=game_logic)
 
     root.mainloop()
